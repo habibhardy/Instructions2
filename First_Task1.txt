@@ -1,0 +1,16 @@
+
+Algorithm dot_product(v1, v2)
+    Begin
+        If Length(v1) ≠ Length(v2) Then
+            Raise an error indicating that the vectors must have the same length
+        
+        ps ← 0
+        
+        // Calculate the  product
+        For i ← 1 to Length(v1) Do
+            ps ← ps + (v1[i] * v2[i])
+        End For
+        
+        // Return the dot product
+        Return ps
+    End

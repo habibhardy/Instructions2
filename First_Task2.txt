@@ -1,0 +1,27 @@
+
+
+Algorithm are_orthogonal(v1, v2)
+    Begin
+        dot_result ← dot_product(v1, v2)
+        If dot_result = 0 Then
+            Return True 
+        Else
+            Return False 
+        End If
+    End
+
+Algorithm main()
+    Begin
+        Read n // Number of vector pairs
+        For i ← 1 to n Do
+            Read v1 
+            Read v2 
+            If are_orthogonal(v1, v2) Then
+                Print "Vectors are orthogonal."
+            Else
+                Print "Vectors are not orthogonal."
+            End If
+        End For
+    End
+
+Call main() // Start the main 
